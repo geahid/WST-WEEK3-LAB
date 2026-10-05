@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Organization Order Form</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" method="get">
+
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{11}"
+                    title="Please enter an 11-digit phone number."
+                    required
+                >
+            </p>
+
+            <fieldset>
+                <legend>Choose Your Order</legend>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="shirt"
+                        name="order"
+                        value="shirt"
+                        required
+                    >
+                    <label for="shirt">Organization Shirt</label>
+                </p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="lanyard"
+                        name="order"
+                        value="lanyard"
+                    >
+                    <label for="lanyard">Organization Lanyard</label>
+                </p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="notebook"
+                        name="order"
+                        value="notebook"
+                    >
+                    <label for="notebook">Organization Notebook</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="sticker"
+                        name="extras[]"
+                        value="sticker"
+                    >
+                    <label for="sticker">Sticker</label>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="keychain"
+                        name="extras[]"
+                        value="keychain"
+                    >
+                    <label for="keychain">Keychain</label>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="pen"
+                        name="extras[]"
+                        value="pen"
+                    >
+                    <label for="pen">Organization Pen</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment">
+                    <option value="">Choose...</option>
+                    <option value="cash">Cash</option>
+                    <option value="gcash">GCash</option>
+                    <option value="bank">Bank Transfer</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Additional Instructions:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                ></textarea>
+            </p>
+
+            <button type="submit">Submit Order</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Organization. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
