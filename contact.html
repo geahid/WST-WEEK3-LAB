@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+
+        <nav>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+            <a href="#student-table">Data Table</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" method="get">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+
+                <p>
+                    <input type="radio" id="email-contact" name="contact_method" value="email" required>
+                    <label for="email-contact">Email</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="phone-contact" name="contact_method" value="phone">
+                    <label for="phone-contact">Phone</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interests</legend>
+
+                <p>
+                    <input type="checkbox" id="web" name="interests[]" value="web-development">
+                    <label for="web">Web Development</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="programming" name="interests[]" value="programming">
+                    <label for="programming">Programming</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="design" name="interests[]" value="design">
+                    <label for="design">Design</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="">Choose...</option>
+                    <option value="question">Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="project">Project</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <section id="student-table">
+            <h2>Student Information</h2>
+
+            <table>
+                <caption>Student Data</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Skill</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Ana Santos</th>
+                        <td>Computer Science</td>
+                        <td>1st Year</td>
+                        <td>Programming</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Mark Reyes</th>
+                        <td>Information Technology</td>
+                        <td>2nd Year</td>
+                        <td>Web Development</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Lisa Cruz</th>
+                        <td>Computer Science</td>
+                        <td>3rd Year</td>
+                        <td>Database</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">John Garcia</th>
+                        <td>Information Technology</td>
+                        <td>1st Year</td>
+                        <td>Networking</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Maria Dela Cruz</th>
+                        <td>Computer Science</td>
+                        <td>4th Year</td>
+                        <td>UI Design</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Geahid S. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
